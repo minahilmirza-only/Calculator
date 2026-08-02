@@ -6,18 +6,20 @@
 }
 body {
   background-color: #ab72a2;
+  background-image: url("calculator.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .container {
-  color: #fff;
+  color: #ab72a2;
   font-size: 1rem;
   margin-top: 20px;
-  background-image: url ("calculator.jpg");
   background-size: cover;
 }
 
 .calculator {
-  background-color: #ab72a2;
   color: #fff;
   width: 100%;
   text-align: center;
