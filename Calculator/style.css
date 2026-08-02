@@ -1,15 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: orange;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
-.buttons {
-  gap: 10px;
+body {
+  background-color: #1e1e24;
 }
 h1 {
-  color: black;
-  font-size: 50px;
-  margin-top: 34px;
-  font-family: "Arvo", serif;
+  background-color: #1e1e24;
+  padding: 25px;
+  color: #fff;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  text-align: center;
+  padding: 24px;
+  margin: 20px;
+  gap: 1px;
 }
