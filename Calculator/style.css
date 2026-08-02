@@ -5,19 +5,35 @@
   text-align: center;
 }
 body {
-  background-color: #1e1e24;
+  background-color: #ab72a2;
 }
-h1 {
-  background-color: #1e1e24;
-  padding: 25px;
+
+.container {
   color: #fff;
+  font-size: 1rem;
+  margin-top: 20px;
+  background-image: url ("calculator.jpg");
+  background-size: cover;
 }
+
+.calculator {
+  background-color: #ab72a2;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-right: 24px;
+}
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
-  text-align: center;
-  padding: 24px;
-  margin: 20px;
+  justify-content: center;
+  padding: 34px;
+  margin: 34px;
   gap: 1px;
+  width: 90vw;
+  height: 50vh;
+  border-radius: 10px;
+  background-color: #fff;
 }
