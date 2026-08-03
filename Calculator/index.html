@@ -9,40 +9,43 @@
 </head>
 <body>
     <div class="container">
-    <h1>Calculator</h1>
+    <div class="title">
+        <h1>Calculator</h1>
     </div>
-    <div class="calculator">
+    
         <input type="text" id="display" height="50px" width="100px" >
-    </div>
-
+    
 <div class="buttons">
 
 <button onclick="clear()" id="clear">AC</button>
 <button onclick="del()" id="delete">DEL</button>
 <button onclick="percent()" id="percent">%</button>
-<button onclick="divide()" id="divide">/</button>
+<button  style="background-color: #00f704;" onclick="divide()" id="divide">/</button>
 
-<button onclick="display('7')" id="7">7</button>
-<button onclick="display('8')" id="8">8</button>
-<button onclick="display('9')" id="9">9</button>
-<button onclick="multiply()" id="multiply">*</button>
-
-
-<button onclick="display('4')" id="4">4</button>
-<button onclick="display('5')" id="5">5</button>
-<button onclick="display('6')" id="6">6</button>
-<button onclick="minus('-')" id="-">-</button>
-
-<button onclick="display('1')" id="1">1</button>
-<button onclick="display('2')" id="2">2</button>
-<button onclick="display('3')" id="3">3</button>
-<button onclick="plus('+')" id="+">+</button>
+<button onclick="displaynumber('7')" id="7">7</button>
+<button onclick="displaynumber('8')" id="8">8</button>
+<button onclick="displaynumber('9')" id="9">9</button>
+<button  style="background-color: #00f704;" onclick="multiply()" id="multiply">*</button>
 
 
-<button onclick="display('0')"id="0">0</button>
-<button onclick="display('.')" id=".">.</button>
-<button onclick="calculate()" id="equal">=</button>
+<button onclick="displaynumber('4')" id="4">4</button>
+<button onclick="displaynumber('5')" id="5">5</button>
+<button onclick="displaynumber('6')" id="6">6</button>
+<button  style="background-color: #00f704;" onclick="minus('-')" id="-">-</button>
 
+<button onclick="displaynumber('1')" id="1">1</button>
+<button onclick="displaynumber('2')" id="2">2</button>
+<button onclick="displaynumber('3')" id="3">3</button>
+<button  style="background-color: #00f704;" onclick="plus('+')" id="+">+</button>
+
+<button style="grid-column: span 2; background-color: #f77f00; font-size: 1.5rem;" onclick="displaynumber('0')">0</button>
+<button onclick="displaynumber('.')" id=".">.</button>
+<button  style="background-color: black;" onclick="calculate()" id="equal">=</button>
 
 </div>
 
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
