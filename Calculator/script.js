@@ -1,7 +1,7 @@
 // 1. Select the calculator screen from HTML
 const displayInput = document.getElementById("display");
 
-// 2. Append clicked number or operator to the screen
+// 2.  clicked number or operator to the screen
 function displaynumber(val) {
   displayInput.value += val;
 }
