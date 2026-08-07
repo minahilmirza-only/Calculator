@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Gallery</title>
+</head>
+
+<header>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</header>
+
+<body>
+
+<section id="home">
+    <h1> Explore the World</h1>
+    <p>Discover a wide range of stunning images curated just for you.</p>
+    <img src="img.jpg" alt="Gallery Image" width="600">
+ </section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <img src="image.jpg" alt="About Image" width="600">
+    <p>We are passionate about photography and aim to provide a platform for photographers to showcase their work.</p>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+        <img src="image1.jpg" alt="Image 1" width="300">
+        <img src="image2.jpg" alt="Image 2" width="300">
+        <img src="image3.jpg" alt="Image 3" width="300">
+        <img src="image4.jpg" alt="Image 4" width="300">
+        <img src="image5.jpg" alt="Image 5" width="300">
+        <img src="image6.jpg" alt="Image 6" width="300">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+    <form action="Submit-form" method="post">
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+        
+   <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
