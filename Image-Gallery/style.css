@@ -1,58 +1,83 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+/* Parent Container for Full-Page Background */
+.main-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  /* Light Blue Gradient Overlay + Image */
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(240, 248, 255, 0.95) 30%,
+      rgba(224, 242, 254, 0.55) 100%
+    ),
+    url("img.jpg");
+
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+/* Header & Navbar (Transparent) */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 10px;
+  background-color: transparent;
+  padding: 10px 50px;
 }
 
 .logo img {
   height: 50px;
-  width: 50px;
-  margin: 10px;
+  width: auto;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin: 20px;
-  padding: 10px;
-  background-color: white;
-  justify-content: end;
+  background-color: transparent; /* White background hata diya */
 }
 
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
+.nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #1e293b;
   font-weight: bold;
   transition: color 0.3s ease;
+  margin-left: 20px;
+}
+
+.nav-links a:hover {
+  color: #0284c7;
+}
+
+/* Hero Section */
+#home {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 70px); /* Screen ki baki height cover karega */
+  padding: 0 50px;
+}
+
+.home-content {
+  max-width: 550px;
 }
 
 #home h1 {
-  font-size: 50px;
-  color: black;
-  margin: 20px;
+  font-size: 3rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-family: "Fantasy", Cursive, monospace;
 }
+
 #home p {
-  font-size: 20px;
-  color: black;
-  margin: 10px;
-}
-#home img {
-  height: 200px;
-  width: 35%;
-  margin: 20px;
-  display: block;
-  block-size: auto;
-  text-align: right;
-  margin-left: auto;
+  font-size: 1.25rem;
+  color: #334155;
+  line-height: 1.6;
 }
